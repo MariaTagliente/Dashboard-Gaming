@@ -1,16 +1,29 @@
-# React + Vite
+<!-- FEATURES
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Overview (Home):
+- Numero totale giochi
+- Numero utenti
+- Numero recensioni
+- Rating medio generale
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Grafici:
+- Andamento recensioni nel tempo
+- Rating medio per genere
+- Distribuzione generi (pie chart)
 
-## React Compiler
+Ricerca e filtri:
+- Ricerca giochi per nome e Filtro per genere
+- Filtro per piattaforma (PC / PS / Xbox)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Lista giochi:
+- Nome gioco, Genere, Rating, Numero recensioni
+- Ordinamento (rating / popolarità)
 
-## Expanding the ESLint configuration
+Top & Flop
+- Giochi migliori votati
+- Giochi peggiori votati
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Utenti (base opzionale)
+- Lista utenti
+- Numero recensioni per utente-->

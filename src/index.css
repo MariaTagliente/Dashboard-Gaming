@@ -1,2 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&display=swap');
 @import "tailwindcss";
 
+@theme{
+    --font-orbitron: "Orbitron", sans-serif;
+    --font-inter: "Inter", sans-serif;
+    --turchese: #00ffff;
+    --bluDark: #010c1b;
+    --bluLight: #0f172a;
+    --blackDark: #27272a;
+    --blackLight: #3d3f43;
+    --shadowTurchese: 0 8px 10px rgba(0, 255, 255, 0.25);
+}
+
+@plugin "daisyui";
+
+.tooltip-custom{
+    position: absolute;
+    left: 120%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--bluDark);
+    color: var(--turchese);
+    border: 1px solid var(--turchese);
+    padding: 4px 16px;
+    border-radius: 20px;
+    font-size: 15px;
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+.group:hover .tooltip-custom {
+  opacity: 1;
+  transform: translateY(-50%) translateX(4px);
+}
