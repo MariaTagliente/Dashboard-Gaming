@@ -10,7 +10,7 @@ import Avatar from "../assets/avatar.png";
 export default function Navbar(){
     return(
         <>
-            <div className="navbar fixed w-full">
+            <div className="navbar">
                 <div className="navbar-start"></div>
                 <div className="navbar-center mt-4">
                     <div className="relative flex items-center">

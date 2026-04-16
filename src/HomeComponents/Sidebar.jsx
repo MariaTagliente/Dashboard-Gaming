@@ -9,24 +9,22 @@ export default function Sidebar(){
 
     return(
         <>
-          <div className="h-screen flex flex-col bg-(--bluDark) w-25 rounded-r-3xl">
-            <ul className="menu w-full flex items-center">
-                <li className="transition duration-200 hover:scale-110">
-                    <IoGameController color="var(--turchese)" size={65} />
-                </li>
-            </ul>    
-
+          <div className="h-screen top-0 fixed flex flex-col bg-(--bluDark) w-24 rounded-r-3xl z-10">
+            <span className="mt-5 flex justify-center items-center">
+                <IoGameController color="var(--turchese)" size={45} />
+            </span>
+               
             <ul className="menu w-full grow flex items-center justify-center gap-5">
                 <li className="relative group">
                     <Link to={'/'} className="w-11 h-11 flex items-center justify-center rounded-full bg-(--bluLight) hover:bg-(--turchese) transition duration-200 hover:scale-125">
                        <BiHomeAlt2 size={20} className="text-white group-hover:hidden"/>
                        <BiSolidHomeAlt2 size={20} className="text-(--bluDark) hidden group-hover:block"/>
                     </Link>
-                    <span className="tooltip-custom">Home</span>                                                    
+                    <span className="tooltip-custom ">Home</span>                                                    
                 </li>
 
                 <li className="relative group">
-                    <Link className="w-11 h-11 flex items-center justify-center rounded-full bg-(--bluLight) hover:bg-(--turchese) transition duration-200 hover:scale-125">
+                    <Link to={'/games'} className="w-11 h-11 flex items-center justify-center rounded-full bg-(--bluLight) hover:bg-(--turchese) transition duration-200 hover:scale-125">
                        <IoGameControllerOutline size={20} className="text-white group-hover:hidden"/>
                        <IoGameController size={20} className="text-(--bluDark) hidden group-hover:block"/> 
                     </Link>
